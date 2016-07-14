@@ -1,0 +1,16 @@
+PODS:
+  - LTExtNSObject (0.1.0)
+
+DEPENDENCIES:
+  - LTExtNSObject (from `../`)
+
+EXTERNAL SOURCES:
+  LTExtNSObject:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LTExtNSObject: 987083df436fa6e6af02a69f1c33f6147ed3e8de
+
+PODFILE CHECKSUM: fefbb3491f3126f39164804cffde227900522669
+
+COCOAPODS: 1.0.0

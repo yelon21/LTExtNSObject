@@ -1,0 +1,6 @@
+#import <UIKit/UIKit.h>
+
+
+FOUNDATION_EXPORT double Pods_LTExtNSObject_ExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LTExtNSObject_ExampleVersionString[];
+
