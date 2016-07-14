@@ -12,8 +12,8 @@
 
 @implementation NSObject (LTCommon)
 
--(NSDictionary *)propertyDictionary
-{
+-(NSDictionary *)propertyDictionary{
+    
     //创建可变字典
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     unsigned int outCount;
@@ -23,7 +23,7 @@
         NSString *propName = [[NSString alloc]initWithCString:property_getName(prop) encoding:NSUTF8StringEncoding];
         id propValue = [self valueForKey:propName];
         if(propValue){
-            [dict setObject:propValue forKey:propName];
+            dict[propName] = propValue;
         }
     }
     free(props);
