@@ -18,9 +18,9 @@
 #endif
 
 #if OBJC_ARC_ENABLED
-#define LT_Release(obj) obj
+#define LT_Release(obj) nil
 #define LT_AutoRelease(obj) obj
-#define LT_SuperDealloc nil;
+#define LT_SuperDealloc nil
 #else
 #define LT_Release(obj) [(obj) release]
 #define LT_AutoRelease(obj) [(obj) autorelease]
