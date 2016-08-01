@@ -39,4 +39,17 @@
     NSDate *date = [formatter dateFromString:dateString];
     return date;
 }
+
++(NSString *)LT_dateString:(NSString *)dateString fromFormatter:(NSString *)fromFormatter toFormatter:(NSString *)toFormatter{
+    
+    NSTimeZone* GTMzone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setTimeZone:GTMzone];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh_Hans_CN"]];
+    [formatter setDateFormat:fromFormatter];
+    NSDate *date = [formatter dateFromString:dateString];
+    [formatter setDateFormat:toFormatter];
+    NSString *dateStr = [formatter stringFromDate:date];
+    return dateStr;
+}
 @end
