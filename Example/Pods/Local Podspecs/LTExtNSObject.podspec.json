@@ -1,9 +1,9 @@
 {
   "name": "LTExtNSObject",
   "version": "0.1.0",
-  "summary": "A short description of LTExtNSObject.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/LTExtNSObject",
+  "summary": "个人工具",
+  "description": "个人工具.",
+  "homepage": "https://github.com/yelon21/LTExtNSObject",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "yelon21": "254956982@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/LTExtNSObject.git",
+    "git": "https://github.com/yelon21/LTExtNSObject.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "6.0"
   },
   "source_files": "LTExtNSObject/Classes/**/*"
 }
