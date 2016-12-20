@@ -8,12 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIApplication.h>
-@interface LTOpenSettings : NSObject
 
 void LTOpenAppSettings();
 void LTOpenSettingsURLString(NSString *urlString);
 
-@end
 //
 /*
 extern NSString * const LTSettingsWifiURLString;//WIFI

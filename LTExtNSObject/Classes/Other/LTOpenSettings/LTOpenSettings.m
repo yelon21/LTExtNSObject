@@ -10,8 +10,6 @@
 #import "NSObject_define.h"
 #import <UIKit/UIApplication.h>
 
-@implementation LTOpenSettings
-
 void LTOpenAppSettings(){
 
     LTOpenSettingsURLString(UIApplicationOpenSettingsURLString);
@@ -30,13 +28,12 @@ void LTOpenSettingsURLString(NSString *urlString){
      */
     
     NSURL * url = [NSURL URLWithString:urlString];
-    NSLog(@"url==%@",url);
+    //NSLog(@"url==%@",url);
     if([[UIApplication sharedApplication] canOpenURL:url]) {
-        NSLog(@"canOpenURL==%@",url);
+        //NSLog(@"canOpenURL==%@",url);
         [[UIApplication sharedApplication] openURL:url];
     }
 }
-@end
 /*
 NSString * const LTSettingsWifiURLString        = @"prefs:root=WIFI";//WIFI
 NSString * const LTSettingsLocationURLString    = @"prefs:root=LOCATION_SERVICES";//定位服务
