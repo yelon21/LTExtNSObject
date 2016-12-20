@@ -30,23 +30,4 @@
     return dict;
 }
 
-- (BOOL)lt_isEmptyObject{
-
-    if (!self) {
-        
-        return YES;
-    }
-    
-    if (self == nil) {
-        
-        return YES;
-    }
-    
-    if (![self isKindOfClass:[self class]]) {
-        
-        return YES;
-    }
-    return NO;
-}
-
 @end

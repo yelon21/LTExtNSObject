@@ -11,6 +11,4 @@
 @interface NSObject (LTCommon)
 
 -(NSDictionary *)propertyDictionary;
-
-- (BOOL)lt_isEmptyObject;
 @end
