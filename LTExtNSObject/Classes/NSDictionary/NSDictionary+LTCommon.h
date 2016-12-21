@@ -10,5 +10,4 @@
 
 @interface NSDictionary (LTCommon)
 
-- (BOOL)lt_isEmpty;
 @end

@@ -10,20 +10,5 @@
 
 @implementation NSArray (LTCommon)
 
-- (BOOL)lt_isEmpty{
-    
-    if (self == nil || ![self isKindOfClass:[NSArray class]]) {
-        return YES;
-    }
-    
-    if ([self count] > 0) {
-        
-        return NO;
-    }
-    else {
-        
-        return YES;
-    }
-}
 
 @end

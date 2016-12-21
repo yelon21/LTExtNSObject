@@ -10,6 +10,5 @@
 
 @interface NSArray (LTCommon)
 
-- (BOOL)lt_isEmpty;
 
 @end
