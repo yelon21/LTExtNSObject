@@ -56,6 +56,11 @@
 #define LT_ScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define LT_ScreenHeight    [UIScreen mainScreen].bounds.size.height
 
+#pragma mark BLOCK
+typedef void(^lt_block_simple)();
+typedef void(^lt_block_simple_one)(id obj);
+typedef void(^lt_block_simple_two)(id obj,id obj2);
+
 #pragma mark LT_IOS_VERSION
 #define LT_IOS_VERSION [[[UIDevice currentDevice]systemVersion] doubleValue]
 //6.0
