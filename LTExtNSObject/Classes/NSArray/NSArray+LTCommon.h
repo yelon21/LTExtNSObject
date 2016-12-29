@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+LTCommon.h"
 
 @interface NSArray (LTCommon)
 
 
 @end
+
+BOOL LT_isEmptyArray(NSObject *obj);

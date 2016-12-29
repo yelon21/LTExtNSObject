@@ -30,4 +30,13 @@
     return dict;
 }
 
++ (BOOL)LT_isValidObj:(NSObject *)obj{
+
+    if (!obj || ![obj isKindOfClass:[self class]]) {
+        
+        return NO;
+    }
+    return YES;
+}
+
 @end

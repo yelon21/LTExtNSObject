@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+LTCommon.h"
 
 @interface NSDictionary (LTCommon)
 
 @end
+
+BOOL LT_isEmptyDictionary(NSObject *obj);

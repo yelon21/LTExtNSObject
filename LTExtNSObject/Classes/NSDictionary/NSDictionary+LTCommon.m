@@ -11,3 +11,15 @@
 @implementation NSDictionary (LTCommon)
 
 @end
+
+BOOL LT_isEmptyDictionary(NSObject *obj){
+    
+    BOOL isEmpty = ![NSDictionary LT_isValidObj:obj];
+    
+    if (!isEmpty) {
+        
+        isEmpty = [(NSDictionary *)obj count] == 0;
+    }
+    
+    return isEmpty;
+}

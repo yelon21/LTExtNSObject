@@ -11,4 +11,5 @@
 @interface NSObject (LTCommon)
 
 -(NSDictionary *)propertyDictionary;
++ (BOOL)LT_isValidObj:(NSObject *)obj;
 @end

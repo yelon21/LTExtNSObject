@@ -12,3 +12,15 @@
 
 
 @end
+
+BOOL LT_isEmptyArray(NSObject *obj){
+    
+    BOOL isEmpty = ![NSArray LT_isValidObj:obj];
+    
+    if (!isEmpty) {
+        
+        isEmpty = [(NSArray *)obj count] == 0;
+    }
+    
+    return isEmpty;
+}
