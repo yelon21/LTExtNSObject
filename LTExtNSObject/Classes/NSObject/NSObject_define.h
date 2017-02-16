@@ -73,8 +73,11 @@ typedef void(^lt_block_simple_two)(id obj,id obj2);
 #define LT_IOS_Foundation_Before_8 LT_IOS_Foundation_Before(NSFoundationVersionNumber_iOS_7_1)
 #define LT_IOS_Foundation_Later_8  LT_IOS_Foundation_Later(NSFoundationVersionNumber_iOS_7_1)
 //9.0
-#define LT_IOS_Foundation_Before_9 LT_IOS_Foundation_Before(NSFoundationVersionNumber_iOS_8_4)
-#define LT_IOS_Foundation_Later_9  LT_IOS_Foundation_Later(NSFoundationVersionNumber_iOS_8_4)
+#define LT_IOS_Foundation_Before_9 LT_IOS_Foundation_Before(NSFoundationVersionNumber_iOS_8_x_Max)
+#define LT_IOS_Foundation_Later_9  LT_IOS_Foundation_Later(NSFoundationVersionNumber_iOS_8_x_Max)
+//10.0
+#define LT_IOS_Foundation_Before_10 LT_IOS_Foundation_Before(NSFoundationVersionNumber_iOS_9_x_Max)
+#define LT_IOS_Foundation_Later_10  LT_IOS_Foundation_Later(NSFoundationVersionNumber_iOS_9_x_Max)
 
 #define LT_IOS_Foundation_Before(VersionNumber) floor(NSFoundationVersionNumber) <= VersionNumber
 #define LT_IOS_Foundation_Later(VersionNumber)  floor(NSFoundationVersionNumber) > VersionNumber
