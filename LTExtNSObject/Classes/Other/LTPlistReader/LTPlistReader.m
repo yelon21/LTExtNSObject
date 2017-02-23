@@ -17,12 +17,7 @@
     return [self LT_objectFromPath:path];
 }
 
-+ (NSDictionary *)LT_getDictionary:(NSString *)plistName forKey:(NSString *)keyName{
-    
-    return [[LTPlistReader LT_getBundlePlist:plistName] objectForKey:keyName];
-}
-
-+ (NSArray *)LT_getArray:(NSString *)plistName forKey:(NSString *)keyName{
++ (id)LT_getObjectForKey:(NSString *)keyName plistName:(NSString *)plistName{
     
     return [[LTPlistReader LT_getBundlePlist:plistName] objectForKey:keyName];
 }

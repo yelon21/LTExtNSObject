@@ -11,8 +11,7 @@
 @interface LTPlistReader : NSObject
 
 + (id)LT_getBundlePlist:(NSString *)plistName;
-+ (NSDictionary *)LT_getDictionary:(NSString *)plistName forKey:(NSString *)keyName;
-+ (NSArray *)LT_getArray:(NSString *)plistName forKey:(NSString *)keyName;
++ (id)LT_getObjectForKey:(NSString *)keyName plistName:(NSString *)plistName;
 
 + (id)LT_objectFromPath:(NSString *)path;
 
