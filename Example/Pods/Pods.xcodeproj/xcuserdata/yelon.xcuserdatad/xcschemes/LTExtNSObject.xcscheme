@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '09EB9385268F4B5F45880CD241043E3F'
+               BlueprintIdentifier = '334EA7D88B42253E38EB31DA54FCDE1C'
                BlueprintName = 'LTExtNSObject'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LTExtNSObject.framework'>

@@ -17,6 +17,7 @@
 #import "NSObject+LTCommon.h"
 #import "NSObject_define.h"
 #import "LTOpenSettings.h"
+#import "LTPlistReader.h"
 
 FOUNDATION_EXPORT double LTExtNSObjectVersionNumber;
 FOUNDATION_EXPORT const unsigned char LTExtNSObjectVersionString[];
