@@ -24,6 +24,11 @@
 
 + (id)LT_objectFromPath:(NSString *)path{
 
+    if (![path isKindOfClass:[NSString class]]
+        ||[path length]==0) {
+        
+        return nil;
+    }
     NSPropertyListFormat format;
     NSError *error = nil;
    
@@ -44,6 +49,13 @@
 }
 
 + (BOOL)LT_savePlist:(id)plist toPath:(NSString *)toPath{
+    
+    if (![toPath isKindOfClass:[NSString class]]
+        ||[toPath length]==0) {
+        
+        NSLog(@"toPath不可为空！");
+        return NO;
+    }
     
     NSError *error = nil;
     
