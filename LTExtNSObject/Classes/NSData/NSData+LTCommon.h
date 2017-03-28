@@ -18,7 +18,7 @@
 
 - (NSString *)lt_SHA224;
 
-- (NSString *)lt_SHA226;
+- (NSString *)lt_SHA256;
 
 - (NSString *)lt_SHA384;
 

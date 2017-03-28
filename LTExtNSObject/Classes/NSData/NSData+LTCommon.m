@@ -90,7 +90,7 @@
     return output;
 }
 
-- (NSString*)lt_SHA226{
+- (NSString*)lt_SHA256{
     
     if (self == nil) {
         
