@@ -12,8 +12,16 @@
 
 void LTOpenAppSettings(){
 
-    LTOpenSettingsURLString(UIApplicationOpenSettingsURLString);
+    if (LT_IOS_Foundation_Before_8) {
+        
+        LTOpenSettingsURLString(@"prefs:");
+    }
+    else{
+        
+        LTOpenSettingsURLString(UIApplicationOpenSettingsURLString);
+    }
 }
+
 void LTOpenSettingsURLString(NSString *urlString){
     
     if (!urlString || ![urlString isKindOfClass:[NSString class]]) {
@@ -47,7 +55,7 @@ NSString * const LTSettingsAirplaneModeOnURLString   = @"prefs:root=AIRPLANE_MOD
 
 //NSString * const LTSettingsBrightnessURLString  = @"prefs:root=Brightness";
 NSString * const LTSettingsInternetTetheringURLString     = @"prefs:root=INTERNET_TETHERING";
-NSString * const LTSettingsSettingURLString = @"prefs:";//设置
+NSString * const LTSettingsSettingURLString = @"prefs:";设置
 NSString * const LTSettingsFaceTimeURLString    = @"prefs:root=FACETIME";//fance time
 
 NSString * const LTSettingsGeneralURLString     = @"prefs:root=General";//设置通用
