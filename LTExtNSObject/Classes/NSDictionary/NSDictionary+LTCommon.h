@@ -13,4 +13,10 @@
 
 @end
 
-BOOL LT_isEmptyDictionary(NSObject *obj);
+#ifdef __cplusplus
+extern "C" {
+#endif
+    BOOL LT_isEmptyDictionary(NSObject *obj);
+#ifdef __cplusplus
+}
+#endif

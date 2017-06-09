@@ -9,9 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIApplication.h>
 
-void LTOpenAppSettings();
-void LTOpenSettingsURLString(NSString *urlString);
-
+#ifdef __cplusplus
+extern "C" {
+#endif
+    
+    void LTOpenAppSettings();
+    void LTOpenSettingsURLString(NSString *urlString);
+    
+#ifdef __cplusplus
+}
+#endif
 //
 /*
 extern NSString * const LTSettingsWifiURLString;//WIFI
