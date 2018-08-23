@@ -23,7 +23,7 @@
 - (NSString *)lt_dateString:(NSString *)formatterStr{
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:3600*8]];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh_Hans_CN"]];
     [formatter setDateFormat:formatterStr];
     NSString *dateStr = [formatter stringFromDate:self];
@@ -33,7 +33,7 @@
 + (NSDate *)LT_date:(NSString *)dateString formatter:(NSString *)formatterStr{
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:3600*8]];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh_Hans_CN"]];
     [formatter setDateFormat:formatterStr];
     NSDate *date = [formatter dateFromString:dateString];
@@ -42,7 +42,7 @@
 
 +(NSString *)LT_dateString:(NSString *)dateString fromFormatter:(NSString *)fromFormatter toFormatter:(NSString *)toFormatter{
     
-    NSTimeZone* GTMzone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    NSTimeZone* GTMzone = [NSTimeZone timeZoneForSecondsFromGMT:3600*8];
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
     [formatter setTimeZone:GTMzone];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh_Hans_CN"]];
