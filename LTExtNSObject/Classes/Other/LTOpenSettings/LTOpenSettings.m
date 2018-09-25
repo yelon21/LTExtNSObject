@@ -12,13 +12,10 @@
 
 void LTOpenAppSettings(){
 
-    if (LT_IOS_Foundation_Before_8) {
-        
-        LTOpenSettingsURLString(@"prefs:");
-    }
-    else{
-        
+    if (@available(iOS 8.0, *)) {
         LTOpenSettingsURLString(UIApplicationOpenSettingsURLString);
+    } else {
+        LTOpenSettingsURLString(@"prefs:");
     }
 }
 

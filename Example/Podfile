@@ -1,11 +1,11 @@
-use_frameworks!
+#use_frameworks!
 
 target 'LTExtNSObject_Example' do
   pod 'LTExtNSObject', :path => '../'
 
-  target 'LTExtNSObject_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  target 'LTExtNSObject_Tests' do
+#    inherit! :search_paths
+#
+#
+#  end
 end

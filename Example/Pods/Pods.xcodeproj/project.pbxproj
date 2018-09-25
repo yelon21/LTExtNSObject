@@ -7,382 +7,292 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		158C65E5839DE0252D07C65985B9B38B /* NSDictionary+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC804E9D7A518D313D05A1A5644B79 /* NSDictionary+LTCommon.m */; };
-		172E6B3F778F30F20B82860B3E54CDD7 /* NSData+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EAC0434FD02C0A0DE037E24AA352B3 /* NSData+LTCommon.m */; };
-		3749498206FEEA6DEACF461EECFE5F5D /* NSObject+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D720962BE443370EDD067FB0B7F806 /* NSObject+LTCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45D8D84C720CC3547041D558E0FFA267 /* NSArray+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0EF64A4396F7FD2D31A9A3834D70E3 /* NSArray+LTCommon.m */; };
-		47A35DCF71ADCF185A22EDEFDFE8DA9A /* NSData+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B10504748F9D0E2608EB53791FC665 /* NSData+LTCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63BE8A1E6A06332F870F7EE64EA8EDB9 /* NSObject_define.h in Headers */ = {isa = PBXBuildFile; fileRef = D43480F74BB6023F2A4A7B586AEEDECC /* NSObject_define.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A2735BCDFC9CCBF60F51261C1EA59FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7BAF023C2A3623616E8C4A952D8E98F5 /* Pods-LTExtNSObject_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BE1D90D6A9B9D0C25D5A347C7F065A /* Pods-LTExtNSObject_Example-dummy.m */; };
-		8230C7D2E8B52418C11FA5E2535FE77C /* NSDate+LTFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0594F5005A631EF62A8CF173829F492F /* NSDate+LTFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D0420C9F80632B71AAA4EF91D056458 /* NSArray+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE760D5082D5482D8A4147E964E17BD /* NSArray+LTCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D2D9F5D2364F03EB03B6D1BB4CF8118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		A3F63F08EC6C1D910F14FB1783D8C6AA /* LTExtNSObject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5166CAC3016270B0F2C0C2AC437A695 /* LTExtNSObject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0F4200D88622D422F06CA143D52AE3C /* Pods-LTExtNSObject_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B91ADC590E6BFD6F503B5782E1F0915 /* Pods-LTExtNSObject_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B88575D20D0BAD2A6956738659BDFBAF /* NSDate+LTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D8344BC274566438F3A9B1C868AB3 /* NSDate+LTFormatter.m */; };
-		CB2DDF31A3011403C8B10377B23F024E /* LTExtNSObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5046A38FE1A066058454843F4B214D /* LTExtNSObject-dummy.m */; };
-		CB712B508FE60524A3EE2450E51C642D /* NSDictionary+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C4994055C3F06BCA416D980D4A8D13 /* NSDictionary+LTCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBDB58B963EA839C09E5CBD830564FE6 /* LTOpenSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D2357832DD075252408304CFF8917 /* LTOpenSettings.m */; };
-		E3E9138CF762212C1AD0B6E407BD143E /* LTPlistReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 640CBCE1054701D23FFF1CD5F2501C55 /* LTPlistReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC7AF489C33D2E8A759E6FAA52109B0C /* LTOpenSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A7D7850DA3E3B039482CA5AA962A73 /* LTOpenSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE502363CAC8883DDF309C02AF4FA716 /* NSObject+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BFA8AFA3A23751D4F7936D076417E9 /* NSObject+LTCommon.m */; };
-		F2914D0B729FCD87EFC411A4A500F202 /* LTPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818EF9A8C5E97A9B90803A9927F280F /* LTPlistReader.m */; };
-		F5AE1AB579C4AD7E017138C0C410B4AC /* Pods-LTExtNSObject_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A250A1184E14FF8B09387D36A5067C21 /* Pods-LTExtNSObject_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA055F0E8DBA685333009D301767AD59 /* Pods-LTExtNSObject_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29EAAB0AA8F172EABC14E721219ACE0 /* Pods-LTExtNSObject_Tests-dummy.m */; };
-		FD2C0644A902E00A974E65465927367D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1103A6B9E3B26CF4AFE4363855EB061D /* LTExtNSObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF433F63C189FCCE9727373DA465407 /* LTExtNSObject-dummy.m */; };
+		1990262CBA68D68DF2CDD83A28A1C546 /* NSArray+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47B90FC46AC8677D85AC4A5CFC983A /* NSArray+LTCommon.m */; };
+		1C5E6E783E0E2BC8FC82E916C6597806 /* NSData+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 146C9E4ADE62C49D17A7E591E3E799B8 /* NSData+LTCommon.m */; };
+		1F32ADBCD9A1E9B4AB58E35CB20760CC /* NSDictionary+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734DD8F220FBED41275CE361E0EAA0E /* NSDictionary+LTCommon.m */; };
+		1F479223A559D6F21785DA73BB71F284 /* NSDate+LTFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 081E968DF9832C97AD3ABAB333B0BC72 /* NSDate+LTFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1FD3C91490FBF961893C88C1FBACFE76 /* NSObject_define.h in Headers */ = {isa = PBXBuildFile; fileRef = A931576D2ED76FFE175929609E6EEE9D /* NSObject_define.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		326FA38B26A0269BA5829474718B15BC /* LTPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D44AC2E56C87E88073C08D4515CDF6 /* LTPlistReader.m */; };
+		3F8EB60CDA7F8E457263C3E94520A0B4 /* NSDictionary+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = F4542182EBE011B5354D8629FED9EB47 /* NSDictionary+LTCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		446EAC9586F550519F6E6F30A1D46384 /* NSObject+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C448BE9B903578DFA3A53060F40454 /* NSObject+LTCommon.m */; };
+		5632D89F1433D1C72C8DFE9C761AA421 /* LTPlistReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7090BF807CB5EC2C981FFDAC6B406814 /* LTPlistReader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D565CFD4DC30FE807E028DF407BB5DD /* LTOpenSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FE5DA8BA738DC13D7A79F60E64A4B5 /* LTOpenSettings.m */; };
+		618E12A6D619D876474764EEA07E8045 /* LTOpenSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8F8A0441FF6969E423979943137F83 /* LTOpenSettings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		724BC2FB8DAA7E7DA968A06BEFF3AE7F /* NSData+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 95804D0DD5CFEB94702850D6C7CCACED /* NSData+LTCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9739CC947C88F68C01D5A9AC5C19D01C /* NSArray+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABBF04CF06CF88B0A80C65EF325E1C0 /* NSArray+LTCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC96F7E57C4B7FCE09CA5944E44C93E9 /* NSDate+LTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0634097C65ACE9E1CCBE49F1E25564 /* NSDate+LTFormatter.m */; };
+		CCABEEB75729B20286835D477CEE1AE9 /* NSObject+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4FDF6399F9E279AF4004A0EB7422ED /* NSObject+LTCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4EDF2604241D65B785CBDCCBEC8AF4C /* Pods-LTExtNSObject_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5BA118F76BE8E0E7703B1546584F1 /* Pods-LTExtNSObject_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0AF3430BF9D5F7BA217AD477A5C06F3 /* PBXContainerItemProxy */ = {
+		C30C70BF665AC522BDCF834E4CC2C204 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 334EA7D88B42253E38EB31DA54FCDE1C;
+			remoteGlobalIDString = 654806AF370FE06B195E02BCF8D3A81B;
 			remoteInfo = LTExtNSObject;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0594F5005A631EF62A8CF173829F492F /* NSDate+LTFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+LTFormatter.h"; sourceTree = "<group>"; };
-		08EB8E269C34531A2F1A49CE8F36AD00 /* Pods-LTExtNSObject_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTExtNSObject_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		0B91ADC590E6BFD6F503B5782E1F0915 /* Pods-LTExtNSObject_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTExtNSObject_Tests-umbrella.h"; sourceTree = "<group>"; };
-		10D051851CB0CB688071978101EFA690 /* Pods-LTExtNSObject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtNSObject_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1DE760D5082D5482D8A4147E964E17BD /* NSArray+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+LTCommon.h"; sourceTree = "<group>"; };
-		26676BA8467CB49CA00F8CAA288545E5 /* Pods-LTExtNSObject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtNSObject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D65875A3E839A3864FBD0D922D3720F /* Pods-LTExtNSObject_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LTExtNSObject_Tests.modulemap"; sourceTree = "<group>"; };
-		3273491E9C8A888712D8F6F2DAD61269 /* Pods-LTExtNSObject_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTExtNSObject_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		344AE4D989BEF5B17BB4D85AF9330A54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34EAC0434FD02C0A0DE037E24AA352B3 /* NSData+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+LTCommon.m"; sourceTree = "<group>"; };
-		3818EF9A8C5E97A9B90803A9927F280F /* LTPlistReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTPlistReader.m; sourceTree = "<group>"; };
-		431D2357832DD075252408304CFF8917 /* LTOpenSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTOpenSettings.m; sourceTree = "<group>"; };
-		4687A3F0C71F0134243429E2FBD41F32 /* Pods-LTExtNSObject_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtNSObject_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4E71C74CEBD66BE9A42309B7B102655B /* Pods-LTExtNSObject_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtNSObject_Example-frameworks.sh"; sourceTree = "<group>"; };
-		590D8344BC274566438F3A9B1C868AB3 /* NSDate+LTFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LTFormatter.m"; sourceTree = "<group>"; };
-		5BAC804E9D7A518D313D05A1A5644B79 /* NSDictionary+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LTCommon.m"; sourceTree = "<group>"; };
-		640CBCE1054701D23FFF1CD5F2501C55 /* LTPlistReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTPlistReader.h; sourceTree = "<group>"; };
-		6618A9559AD1B284F3E53253D67BA8D4 /* Pods-LTExtNSObject_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LTExtNSObject_Example.modulemap"; sourceTree = "<group>"; };
-		6A0653CE1672EB48002907ED361BAC1C /* LTExtNSObject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTExtNSObject.xcconfig; sourceTree = "<group>"; };
-		6B0EF64A4396F7FD2D31A9A3834D70E3 /* NSArray+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LTCommon.m"; sourceTree = "<group>"; };
-		70D720962BE443370EDD067FB0B7F806 /* NSObject+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LTCommon.h"; sourceTree = "<group>"; };
-		88DF3C6FD58C825A8759FB8F53E6DCC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89C4994055C3F06BCA416D980D4A8D13 /* NSDictionary+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LTCommon.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A46170357EB737EFD14086EC931E908 /* Pods-LTExtNSObject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtNSObject_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A250A1184E14FF8B09387D36A5067C21 /* Pods-LTExtNSObject_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTExtNSObject_Example-umbrella.h"; sourceTree = "<group>"; };
-		A7A7D7850DA3E3B039482CA5AA962A73 /* LTOpenSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTOpenSettings.h; sourceTree = "<group>"; };
-		A89A53563CE37D250EBE82EAF96946E8 /* LTExtNSObject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LTExtNSObject.modulemap; sourceTree = "<group>"; };
-		AC5046A38FE1A066058454843F4B214D /* LTExtNSObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTExtNSObject-dummy.m"; sourceTree = "<group>"; };
-		ADF4C54333C18DA230E3B1C42B894608 /* Pods-LTExtNSObject_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTExtNSObject_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C51FD36BD2712A228C436B531B8A7314 /* LTExtNSObject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LTExtNSObject.framework; path = LTExtNSObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9B35711AB969B4A0E3181FE2AA0BBC3 /* Pods-LTExtNSObject_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtNSObject_Tests-resources.sh"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CCC0F256BD67A33C759AE30E46C64B97 /* Pods-LTExtNSObject_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtNSObject_Example-resources.sh"; sourceTree = "<group>"; };
-		D055F08937B1D3C34A2F8BCEFAE3AE78 /* Pods_LTExtNSObject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LTExtNSObject_Tests.framework; path = "Pods-LTExtNSObject_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D41E6008C49E3BC7215146F87B09637D /* LTExtNSObject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTExtNSObject-prefix.pch"; sourceTree = "<group>"; };
-		D43480F74BB6023F2A4A7B586AEEDECC /* NSObject_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSObject_define.h; sourceTree = "<group>"; };
-		D4B0F2AEF30FA1D811D653CF23AFCDDD /* Pods_LTExtNSObject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LTExtNSObject_Example.framework; path = "Pods-LTExtNSObject_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4BFA8AFA3A23751D4F7936D076417E9 /* NSObject+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LTCommon.m"; sourceTree = "<group>"; };
-		D7BE1D90D6A9B9D0C25D5A347C7F065A /* Pods-LTExtNSObject_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTExtNSObject_Example-dummy.m"; sourceTree = "<group>"; };
-		D9B10504748F9D0E2608EB53791FC665 /* NSData+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+LTCommon.h"; sourceTree = "<group>"; };
-		D9D1C4A1C47F336717E917D70E215F28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF211C757B78FFBA99F4AC28F3EFE83A /* Pods-LTExtNSObject_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTExtNSObject_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F29EAAB0AA8F172EABC14E721219ACE0 /* Pods-LTExtNSObject_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTExtNSObject_Tests-dummy.m"; sourceTree = "<group>"; };
-		F5166CAC3016270B0F2C0C2AC437A695 /* LTExtNSObject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTExtNSObject-umbrella.h"; sourceTree = "<group>"; };
-		F9F1DBF3A85F36F629AB1D28E22A4BD6 /* Pods-LTExtNSObject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtNSObject_Example.release.xcconfig"; sourceTree = "<group>"; };
+		081E968DF9832C97AD3ABAB333B0BC72 /* NSDate+LTFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+LTFormatter.h"; sourceTree = "<group>"; };
+		146C9E4ADE62C49D17A7E591E3E799B8 /* NSData+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+LTCommon.m"; sourceTree = "<group>"; };
+		179275BC1C5FF905AC3C059CBACD4B7A /* LTExtNSObject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTExtNSObject.xcconfig; sourceTree = "<group>"; };
+		1C69A492B8ECA6D8F6906D16D2C56718 /* libPods-LTExtNSObject_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTExtNSObject_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C448BE9B903578DFA3A53060F40454 /* NSObject+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LTCommon.m"; sourceTree = "<group>"; };
+		2ABBF04CF06CF88B0A80C65EF325E1C0 /* NSArray+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+LTCommon.h"; sourceTree = "<group>"; };
+		3DD2C1B9779C69B141CFD1272DA6CFBA /* Pods-LTExtNSObject_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTExtNSObject_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4549CEF11B56EDA757599F655500B8D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4C2BB64538FA64DD281906716A2A86B5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4DE5BA118F76BE8E0E7703B1546584F1 /* Pods-LTExtNSObject_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTExtNSObject_Example-dummy.m"; sourceTree = "<group>"; };
+		62B6DB3079B5BE740B4248D0AD3EEA2E /* libLTExtNSObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLTExtNSObject.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF433F63C189FCCE9727373DA465407 /* LTExtNSObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTExtNSObject-dummy.m"; sourceTree = "<group>"; };
+		7090BF807CB5EC2C981FFDAC6B406814 /* LTPlistReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTPlistReader.h; sourceTree = "<group>"; };
+		7734DD8F220FBED41275CE361E0EAA0E /* NSDictionary+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LTCommon.m"; sourceTree = "<group>"; };
+		8A47B90FC46AC8677D85AC4A5CFC983A /* NSArray+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LTCommon.m"; sourceTree = "<group>"; };
+		8C8F8A0441FF6969E423979943137F83 /* LTOpenSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTOpenSettings.h; sourceTree = "<group>"; };
+		91FE5DA8BA738DC13D7A79F60E64A4B5 /* LTOpenSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTOpenSettings.m; sourceTree = "<group>"; };
+		9315015301FE12410B86C8F84097B7C4 /* Pods-LTExtNSObject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtNSObject_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95804D0DD5CFEB94702850D6C7CCACED /* NSData+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+LTCommon.h"; sourceTree = "<group>"; };
+		97169874C0812A60EED6D982608EB786 /* Pods-LTExtNSObject_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTExtNSObject_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A36F763C4A0469E2B186FD3E85F7B3B9 /* LTExtNSObject.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = LTExtNSObject.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A931576D2ED76FFE175929609E6EEE9D /* NSObject_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSObject_define.h; sourceTree = "<group>"; };
+		AB8119400EA393591F5249A552621DDD /* Pods-LTExtNSObject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtNSObject_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B0D44AC2E56C87E88073C08D4515CDF6 /* LTPlistReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTPlistReader.m; sourceTree = "<group>"; };
+		D4E93E622ADAB609A9DCE6543DA35ADB /* LTExtNSObject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTExtNSObject-prefix.pch"; sourceTree = "<group>"; };
+		ED4FDF6399F9E279AF4004A0EB7422ED /* NSObject+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LTCommon.h"; sourceTree = "<group>"; };
+		F4542182EBE011B5354D8629FED9EB47 /* NSDictionary+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LTCommon.h"; sourceTree = "<group>"; };
+		FB0634097C65ACE9E1CCBE49F1E25564 /* NSDate+LTFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LTFormatter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		210FDFD45F6BF1C64160159F7355B88B /* Frameworks */ = {
+		9FA6F3F23F904ED0C66968FA1E4527A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2D9F5D2364F03EB03B6D1BB4CF8118 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28A184372F32EE5B0A505B1305EF67B9 /* Frameworks */ = {
+		DEF91D15B03801DFC2BF79BBAFF2330A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2735BCDFC9CCBF60F51261C1EA59FC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		880468305E6FF6B5A9B4CD0B6D9C2AA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD2C0644A902E00A974E65465927367D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04D76CA2EE94F3631C5E56B3290C6CE2 /* Development Pods */ = {
+		00473C53F1D1CD366786D7DD4808A71C /* LTPlistReader */ = {
 			isa = PBXGroup;
 			children = (
-				7A6B98DD11A450B7D6DDE93993A4CA09 /* LTExtNSObject */,
+				7090BF807CB5EC2C981FFDAC6B406814 /* LTPlistReader.h */,
+				B0D44AC2E56C87E88073C08D4515CDF6 /* LTPlistReader.m */,
 			);
-			name = "Development Pods";
+			path = LTPlistReader;
 			sourceTree = "<group>";
 		};
-		14B8C54FB79C055D67309D311509C295 /* Targets Support Files */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F276329DA7F9533401634341E616F32E /* Pods-LTExtNSObject_Example */,
-				EC18B599587BA6D35AFED021CD946085 /* Pods-LTExtNSObject_Tests */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EC12886F3CBA2F1275C596B98B139BF /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F4542182EBE011B5354D8629FED9EB47 /* NSDictionary+LTCommon.h */,
+				7734DD8F220FBED41275CE361E0EAA0E /* NSDictionary+LTCommon.m */,
+			);
+			name = NSDictionary;
+			path = LTExtNSObject/Classes/NSDictionary;
+			sourceTree = "<group>";
+		};
+		33EB340B362E1E5978A42B7FD95122F9 /* LTExtNSObject */ = {
+			isa = PBXGroup;
+			children = (
+				4059DAD291292CBFB0DEE6F7C53E4F65 /* NSArray */,
+				C4BC58B384FB7F64B0FFC442441EB7CC /* NSData */,
+				85FB55D9024AE9C0E9CBE01A1458AB74 /* NSDate */,
+				1EC12886F3CBA2F1275C596B98B139BF /* NSDictionary */,
+				910E8940AB291E948293890933CAAF0C /* NSObject */,
+				969CDA6C4918A5647165FD6DEEC7F7E2 /* Other */,
+				ACF256B39DD6782715042A4F2FCAC274 /* Pod */,
+				A54E121DBA0286FA9CE8B05D665A689C /* Support Files */,
+			);
+			name = LTExtNSObject;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4059DAD291292CBFB0DEE6F7C53E4F65 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				2ABBF04CF06CF88B0A80C65EF325E1C0 /* NSArray+LTCommon.h */,
+				8A47B90FC46AC8677D85AC4A5CFC983A /* NSArray+LTCommon.m */,
+			);
+			name = NSArray;
+			path = LTExtNSObject/Classes/NSArray;
+			sourceTree = "<group>";
+		};
+		716CC1CC8720B80029513FCAEE5A2236 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C3874A806DBCFD49691FEB1C5C448EB /* Pods-LTExtNSObject_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		455DC1A20EB05D59302C03CC711647E4 /* NSData */ = {
+		7D1F0D7EB87ECC48EC3B4BFE5CB6A442 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D9B10504748F9D0E2608EB53791FC665 /* NSData+LTCommon.h */,
-				34EAC0434FD02C0A0DE037E24AA352B3 /* NSData+LTCommon.m */,
+				33EB340B362E1E5978A42B7FD95122F9 /* LTExtNSObject */,
 			);
-			name = NSData;
-			path = NSData;
-			sourceTree = "<group>";
-		};
-		583960F6BEC2AB8A735AF9B53287B5CE /* NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				89C4994055C3F06BCA416D980D4A8D13 /* NSDictionary+LTCommon.h */,
-				5BAC804E9D7A518D313D05A1A5644B79 /* NSDictionary+LTCommon.m */,
-			);
-			name = NSDictionary;
-			path = NSDictionary;
-			sourceTree = "<group>";
-		};
-		5C31558F963B58D95A37EFF28000E711 /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				0594F5005A631EF62A8CF173829F492F /* NSDate+LTFormatter.h */,
-				590D8344BC274566438F3A9B1C868AB3 /* NSDate+LTFormatter.m */,
-			);
-			name = NSDate;
-			path = NSDate;
-			sourceTree = "<group>";
-		};
-		5FC060D68DE3C837CF3B6F8CE96C7C70 /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				1DE760D5082D5482D8A4147E964E17BD /* NSArray+LTCommon.h */,
-				6B0EF64A4396F7FD2D31A9A3834D70E3 /* NSArray+LTCommon.m */,
-			);
-			name = NSArray;
-			path = NSArray;
-			sourceTree = "<group>";
-		};
-		645C70328C59289F2C0089F73A6E2512 /* LTPlistReader */ = {
-			isa = PBXGroup;
-			children = (
-				640CBCE1054701D23FFF1CD5F2501C55 /* LTPlistReader.h */,
-				3818EF9A8C5E97A9B90803A9927F280F /* LTPlistReader.m */,
-			);
-			name = LTPlistReader;
-			path = LTPlistReader;
-			sourceTree = "<group>";
-		};
-		7211E576BEB4EFE03354F843EC3F9D38 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5FC060D68DE3C837CF3B6F8CE96C7C70 /* NSArray */,
-				455DC1A20EB05D59302C03CC711647E4 /* NSData */,
-				5C31558F963B58D95A37EFF28000E711 /* NSDate */,
-				583960F6BEC2AB8A735AF9B53287B5CE /* NSDictionary */,
-				D51FB5B885876149B8B37CC7619578A5 /* NSObject */,
-				B669B603FC5AC9054A82EC0C111692A6 /* Other */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		79F59A42402AE522D8013E6432D97481 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C51FD36BD2712A228C436B531B8A7314 /* LTExtNSObject.framework */,
-				D4B0F2AEF30FA1D811D653CF23AFCDDD /* Pods_LTExtNSObject_Example.framework */,
-				D055F08937B1D3C34A2F8BCEFAE3AE78 /* Pods_LTExtNSObject_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7A6B98DD11A450B7D6DDE93993A4CA09 /* LTExtNSObject */ = {
-			isa = PBXGroup;
-			children = (
-				B08F577EC7B1006BCD3B7E018DA26D53 /* LTExtNSObject */,
-				B18D94BE74C01EDCF8FD530E3E20DE47 /* Support Files */,
-			);
-			name = LTExtNSObject;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				04D76CA2EE94F3631C5E56B3290C6CE2 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				79F59A42402AE522D8013E6432D97481 /* Products */,
-				14B8C54FB79C055D67309D311509C295 /* Targets Support Files */,
+				7D1F0D7EB87ECC48EC3B4BFE5CB6A442 /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				F3B5E924B7F040174730BE011E40FD5C /* Products */,
+				716CC1CC8720B80029513FCAEE5A2236 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B08F577EC7B1006BCD3B7E018DA26D53 /* LTExtNSObject */ = {
+		85FB55D9024AE9C0E9CBE01A1458AB74 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				7211E576BEB4EFE03354F843EC3F9D38 /* Classes */,
+				081E968DF9832C97AD3ABAB333B0BC72 /* NSDate+LTFormatter.h */,
+				FB0634097C65ACE9E1CCBE49F1E25564 /* NSDate+LTFormatter.m */,
 			);
-			name = LTExtNSObject;
-			path = LTExtNSObject;
+			name = NSDate;
+			path = LTExtNSObject/Classes/NSDate;
 			sourceTree = "<group>";
 		};
-		B18D94BE74C01EDCF8FD530E3E20DE47 /* Support Files */ = {
+		910E8940AB291E948293890933CAAF0C /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				344AE4D989BEF5B17BB4D85AF9330A54 /* Info.plist */,
-				A89A53563CE37D250EBE82EAF96946E8 /* LTExtNSObject.modulemap */,
-				6A0653CE1672EB48002907ED361BAC1C /* LTExtNSObject.xcconfig */,
-				AC5046A38FE1A066058454843F4B214D /* LTExtNSObject-dummy.m */,
-				D41E6008C49E3BC7215146F87B09637D /* LTExtNSObject-prefix.pch */,
-				F5166CAC3016270B0F2C0C2AC437A695 /* LTExtNSObject-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LTExtNSObject";
-			sourceTree = "<group>";
-		};
-		B669B603FC5AC9054A82EC0C111692A6 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				E600D9EB8E1048693CB5F399968C42AE /* LTOpenSettings */,
-				645C70328C59289F2C0089F73A6E2512 /* LTPlistReader */,
-			);
-			name = Other;
-			path = Other;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D51FB5B885876149B8B37CC7619578A5 /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				70D720962BE443370EDD067FB0B7F806 /* NSObject+LTCommon.h */,
-				D4BFA8AFA3A23751D4F7936D076417E9 /* NSObject+LTCommon.m */,
-				D43480F74BB6023F2A4A7B586AEEDECC /* NSObject_define.h */,
+				ED4FDF6399F9E279AF4004A0EB7422ED /* NSObject+LTCommon.h */,
+				21C448BE9B903578DFA3A53060F40454 /* NSObject+LTCommon.m */,
+				A931576D2ED76FFE175929609E6EEE9D /* NSObject_define.h */,
 			);
 			name = NSObject;
-			path = NSObject;
+			path = LTExtNSObject/Classes/NSObject;
 			sourceTree = "<group>";
 		};
-		E600D9EB8E1048693CB5F399968C42AE /* LTOpenSettings */ = {
+		969CDA6C4918A5647165FD6DEEC7F7E2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				A7A7D7850DA3E3B039482CA5AA962A73 /* LTOpenSettings.h */,
-				431D2357832DD075252408304CFF8917 /* LTOpenSettings.m */,
+				A56E5785EF7970BA4E1DD2B2DB5621D8 /* LTOpenSettings */,
+				00473C53F1D1CD366786D7DD4808A71C /* LTPlistReader */,
 			);
-			name = LTOpenSettings;
-			path = LTOpenSettings;
+			name = Other;
+			path = LTExtNSObject/Classes/Other;
 			sourceTree = "<group>";
 		};
-		EC18B599587BA6D35AFED021CD946085 /* Pods-LTExtNSObject_Tests */ = {
+		9C3874A806DBCFD49691FEB1C5C448EB /* Pods-LTExtNSObject_Example */ = {
 			isa = PBXGroup;
 			children = (
-				D9D1C4A1C47F336717E917D70E215F28 /* Info.plist */,
-				2D65875A3E839A3864FBD0D922D3720F /* Pods-LTExtNSObject_Tests.modulemap */,
-				DF211C757B78FFBA99F4AC28F3EFE83A /* Pods-LTExtNSObject_Tests-acknowledgements.markdown */,
-				ADF4C54333C18DA230E3B1C42B894608 /* Pods-LTExtNSObject_Tests-acknowledgements.plist */,
-				F29EAAB0AA8F172EABC14E721219ACE0 /* Pods-LTExtNSObject_Tests-dummy.m */,
-				4687A3F0C71F0134243429E2FBD41F32 /* Pods-LTExtNSObject_Tests-frameworks.sh */,
-				C9B35711AB969B4A0E3181FE2AA0BBC3 /* Pods-LTExtNSObject_Tests-resources.sh */,
-				0B91ADC590E6BFD6F503B5782E1F0915 /* Pods-LTExtNSObject_Tests-umbrella.h */,
-				26676BA8467CB49CA00F8CAA288545E5 /* Pods-LTExtNSObject_Tests.debug.xcconfig */,
-				10D051851CB0CB688071978101EFA690 /* Pods-LTExtNSObject_Tests.release.xcconfig */,
-			);
-			name = "Pods-LTExtNSObject_Tests";
-			path = "Target Support Files/Pods-LTExtNSObject_Tests";
-			sourceTree = "<group>";
-		};
-		F276329DA7F9533401634341E616F32E /* Pods-LTExtNSObject_Example */ = {
-			isa = PBXGroup;
-			children = (
-				88DF3C6FD58C825A8759FB8F53E6DCC9 /* Info.plist */,
-				6618A9559AD1B284F3E53253D67BA8D4 /* Pods-LTExtNSObject_Example.modulemap */,
-				3273491E9C8A888712D8F6F2DAD61269 /* Pods-LTExtNSObject_Example-acknowledgements.markdown */,
-				08EB8E269C34531A2F1A49CE8F36AD00 /* Pods-LTExtNSObject_Example-acknowledgements.plist */,
-				D7BE1D90D6A9B9D0C25D5A347C7F065A /* Pods-LTExtNSObject_Example-dummy.m */,
-				4E71C74CEBD66BE9A42309B7B102655B /* Pods-LTExtNSObject_Example-frameworks.sh */,
-				CCC0F256BD67A33C759AE30E46C64B97 /* Pods-LTExtNSObject_Example-resources.sh */,
-				A250A1184E14FF8B09387D36A5067C21 /* Pods-LTExtNSObject_Example-umbrella.h */,
-				9A46170357EB737EFD14086EC931E908 /* Pods-LTExtNSObject_Example.debug.xcconfig */,
-				F9F1DBF3A85F36F629AB1D28E22A4BD6 /* Pods-LTExtNSObject_Example.release.xcconfig */,
+				97169874C0812A60EED6D982608EB786 /* Pods-LTExtNSObject_Example-acknowledgements.markdown */,
+				3DD2C1B9779C69B141CFD1272DA6CFBA /* Pods-LTExtNSObject_Example-acknowledgements.plist */,
+				4DE5BA118F76BE8E0E7703B1546584F1 /* Pods-LTExtNSObject_Example-dummy.m */,
+				AB8119400EA393591F5249A552621DDD /* Pods-LTExtNSObject_Example.debug.xcconfig */,
+				9315015301FE12410B86C8F84097B7C4 /* Pods-LTExtNSObject_Example.release.xcconfig */,
 			);
 			name = "Pods-LTExtNSObject_Example";
 			path = "Target Support Files/Pods-LTExtNSObject_Example";
 			sourceTree = "<group>";
 		};
+		A54E121DBA0286FA9CE8B05D665A689C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				179275BC1C5FF905AC3C059CBACD4B7A /* LTExtNSObject.xcconfig */,
+				6FF433F63C189FCCE9727373DA465407 /* LTExtNSObject-dummy.m */,
+				D4E93E622ADAB609A9DCE6543DA35ADB /* LTExtNSObject-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LTExtNSObject";
+			sourceTree = "<group>";
+		};
+		A56E5785EF7970BA4E1DD2B2DB5621D8 /* LTOpenSettings */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F8A0441FF6969E423979943137F83 /* LTOpenSettings.h */,
+				91FE5DA8BA738DC13D7A79F60E64A4B5 /* LTOpenSettings.m */,
+			);
+			path = LTOpenSettings;
+			sourceTree = "<group>";
+		};
+		ACF256B39DD6782715042A4F2FCAC274 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4549CEF11B56EDA757599F655500B8D6 /* LICENSE */,
+				A36F763C4A0469E2B186FD3E85F7B3B9 /* LTExtNSObject.podspec */,
+				4C2BB64538FA64DD281906716A2A86B5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C4BC58B384FB7F64B0FFC442441EB7CC /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				95804D0DD5CFEB94702850D6C7CCACED /* NSData+LTCommon.h */,
+				146C9E4ADE62C49D17A7E591E3E799B8 /* NSData+LTCommon.m */,
+			);
+			name = NSData;
+			path = LTExtNSObject/Classes/NSData;
+			sourceTree = "<group>";
+		};
+		F3B5E924B7F040174730BE011E40FD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B6DB3079B5BE740B4248D0AD3EEA2E /* libLTExtNSObject.a */,
+				1C69A492B8ECA6D8F6906D16D2C56718 /* libPods-LTExtNSObject_Example.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03032A0A76B10069AF8133AC55DCF053 /* Headers */ = {
+		7E50D6E86732A8203D1A36E33E1BE0FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F63F08EC6C1D910F14FB1783D8C6AA /* LTExtNSObject-umbrella.h in Headers */,
-				EC7AF489C33D2E8A759E6FAA52109B0C /* LTOpenSettings.h in Headers */,
-				E3E9138CF762212C1AD0B6E407BD143E /* LTPlistReader.h in Headers */,
-				9D0420C9F80632B71AAA4EF91D056458 /* NSArray+LTCommon.h in Headers */,
-				47A35DCF71ADCF185A22EDEFDFE8DA9A /* NSData+LTCommon.h in Headers */,
-				8230C7D2E8B52418C11FA5E2535FE77C /* NSDate+LTFormatter.h in Headers */,
-				CB712B508FE60524A3EE2450E51C642D /* NSDictionary+LTCommon.h in Headers */,
-				3749498206FEEA6DEACF461EECFE5F5D /* NSObject+LTCommon.h in Headers */,
-				63BE8A1E6A06332F870F7EE64EA8EDB9 /* NSObject_define.h in Headers */,
+				618E12A6D619D876474764EEA07E8045 /* LTOpenSettings.h in Headers */,
+				5632D89F1433D1C72C8DFE9C761AA421 /* LTPlistReader.h in Headers */,
+				9739CC947C88F68C01D5A9AC5C19D01C /* NSArray+LTCommon.h in Headers */,
+				724BC2FB8DAA7E7DA968A06BEFF3AE7F /* NSData+LTCommon.h in Headers */,
+				1F479223A559D6F21785DA73BB71F284 /* NSDate+LTFormatter.h in Headers */,
+				3F8EB60CDA7F8E457263C3E94520A0B4 /* NSDictionary+LTCommon.h in Headers */,
+				CCABEEB75729B20286835D477CEE1AE9 /* NSObject+LTCommon.h in Headers */,
+				1FD3C91490FBF961893C88C1FBACFE76 /* NSObject_define.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3B63BE0C29353235E8833BBE18BD3F3 /* Headers */ = {
+		E40C758CD01ABA483ACB92ED76F49C4E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AE1AB579C4AD7E017138C0C410B4AC /* Pods-LTExtNSObject_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1E4441397FD12D917ACB7EEE680C114 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0F4200D88622D422F06CA143D52AE3C /* Pods-LTExtNSObject_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		334EA7D88B42253E38EB31DA54FCDE1C /* LTExtNSObject */ = {
+		654806AF370FE06B195E02BCF8D3A81B /* LTExtNSObject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01FDB7BF5E1B7740D950E4D15B6247A4 /* Build configuration list for PBXNativeTarget "LTExtNSObject" */;
+			buildConfigurationList = 8DA8EA6571674308A05DBF5167BEC09C /* Build configuration list for PBXNativeTarget "LTExtNSObject" */;
 			buildPhases = (
-				7EEF92D372F11B6B3777F05F76C06082 /* Sources */,
-				28A184372F32EE5B0A505B1305EF67B9 /* Frameworks */,
-				03032A0A76B10069AF8133AC55DCF053 /* Headers */,
+				7E50D6E86732A8203D1A36E33E1BE0FA /* Headers */,
+				05CBBC3C15D8DAE76415DEAFF8F7FF8C /* Sources */,
+				9FA6F3F23F904ED0C66968FA1E4527A0 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,43 +300,26 @@
 			);
 			name = LTExtNSObject;
 			productName = LTExtNSObject;
-			productReference = C51FD36BD2712A228C436B531B8A7314 /* LTExtNSObject.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 62B6DB3079B5BE740B4248D0AD3EEA2E /* libLTExtNSObject.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		51A710E8396A6807A21434AF46D5BF47 /* Pods-LTExtNSObject_Tests */ = {
+		6FAC92BA92F45708245C029674FE7460 /* Pods-LTExtNSObject_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BC3A92F0677A46F683A5BFC3F39F076 /* Build configuration list for PBXNativeTarget "Pods-LTExtNSObject_Tests" */;
+			buildConfigurationList = 0F144D802CC84951CB926BF47AF4A07D /* Build configuration list for PBXNativeTarget "Pods-LTExtNSObject_Example" */;
 			buildPhases = (
-				57C96F25D7A7EB10BF84CD6D2BA0D302 /* Sources */,
-				880468305E6FF6B5A9B4CD0B6D9C2AA8 /* Frameworks */,
-				C1E4441397FD12D917ACB7EEE680C114 /* Headers */,
+				E40C758CD01ABA483ACB92ED76F49C4E /* Headers */,
+				FCD09CD8A0CA520C313FD3FDEF3C36EE /* Sources */,
+				DEF91D15B03801DFC2BF79BBAFF2330A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-LTExtNSObject_Tests";
-			productName = "Pods-LTExtNSObject_Tests";
-			productReference = D055F08937B1D3C34A2F8BCEFAE3AE78 /* Pods_LTExtNSObject_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		92DC523E3E2217FCF93BEBD425950134 /* Pods-LTExtNSObject_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A3BF0D7DAC07876001AEF148352DA5D /* Build configuration list for PBXNativeTarget "Pods-LTExtNSObject_Example" */;
-			buildPhases = (
-				E3ED3098027A0566A7A46E66B9E84FAB /* Sources */,
-				210FDFD45F6BF1C64160159F7355B88B /* Frameworks */,
-				A3B63BE0C29353235E8833BBE18BD3F3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1140F884D8325AA70DF917CAD8F54761 /* PBXTargetDependency */,
+				BF6BC0E5A61AEDA1B225F4ECB5DF571D /* PBXTargetDependency */,
 			);
 			name = "Pods-LTExtNSObject_Example";
 			productName = "Pods-LTExtNSObject_Example";
-			productReference = D4B0F2AEF30FA1D811D653CF23AFCDDD /* Pods_LTExtNSObject_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 1C69A492B8ECA6D8F6906D16D2C56718 /* libPods-LTExtNSObject_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -434,8 +327,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1000;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -445,355 +338,273 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 79F59A42402AE522D8013E6432D97481 /* Products */;
+			productRefGroup = F3B5E924B7F040174730BE011E40FD5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				334EA7D88B42253E38EB31DA54FCDE1C /* LTExtNSObject */,
-				92DC523E3E2217FCF93BEBD425950134 /* Pods-LTExtNSObject_Example */,
-				51A710E8396A6807A21434AF46D5BF47 /* Pods-LTExtNSObject_Tests */,
+				654806AF370FE06B195E02BCF8D3A81B /* LTExtNSObject */,
+				6FAC92BA92F45708245C029674FE7460 /* Pods-LTExtNSObject_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		57C96F25D7A7EB10BF84CD6D2BA0D302 /* Sources */ = {
+		05CBBC3C15D8DAE76415DEAFF8F7FF8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA055F0E8DBA685333009D301767AD59 /* Pods-LTExtNSObject_Tests-dummy.m in Sources */,
+				1103A6B9E3B26CF4AFE4363855EB061D /* LTExtNSObject-dummy.m in Sources */,
+				5D565CFD4DC30FE807E028DF407BB5DD /* LTOpenSettings.m in Sources */,
+				326FA38B26A0269BA5829474718B15BC /* LTPlistReader.m in Sources */,
+				1990262CBA68D68DF2CDD83A28A1C546 /* NSArray+LTCommon.m in Sources */,
+				1C5E6E783E0E2BC8FC82E916C6597806 /* NSData+LTCommon.m in Sources */,
+				BC96F7E57C4B7FCE09CA5944E44C93E9 /* NSDate+LTFormatter.m in Sources */,
+				1F32ADBCD9A1E9B4AB58E35CB20760CC /* NSDictionary+LTCommon.m in Sources */,
+				446EAC9586F550519F6E6F30A1D46384 /* NSObject+LTCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EEF92D372F11B6B3777F05F76C06082 /* Sources */ = {
+		FCD09CD8A0CA520C313FD3FDEF3C36EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2DDF31A3011403C8B10377B23F024E /* LTExtNSObject-dummy.m in Sources */,
-				CBDB58B963EA839C09E5CBD830564FE6 /* LTOpenSettings.m in Sources */,
-				F2914D0B729FCD87EFC411A4A500F202 /* LTPlistReader.m in Sources */,
-				45D8D84C720CC3547041D558E0FFA267 /* NSArray+LTCommon.m in Sources */,
-				172E6B3F778F30F20B82860B3E54CDD7 /* NSData+LTCommon.m in Sources */,
-				B88575D20D0BAD2A6956738659BDFBAF /* NSDate+LTFormatter.m in Sources */,
-				158C65E5839DE0252D07C65985B9B38B /* NSDictionary+LTCommon.m in Sources */,
-				EE502363CAC8883DDF309C02AF4FA716 /* NSObject+LTCommon.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3ED3098027A0566A7A46E66B9E84FAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BAF023C2A3623616E8C4A952D8E98F5 /* Pods-LTExtNSObject_Example-dummy.m in Sources */,
+				E4EDF2604241D65B785CBDCCBEC8AF4C /* Pods-LTExtNSObject_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1140F884D8325AA70DF917CAD8F54761 /* PBXTargetDependency */ = {
+		BF6BC0E5A61AEDA1B225F4ECB5DF571D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LTExtNSObject;
-			target = 334EA7D88B42253E38EB31DA54FCDE1C /* LTExtNSObject */;
-			targetProxy = B0AF3430BF9D5F7BA217AD477A5C06F3 /* PBXContainerItemProxy */;
+			target = 654806AF370FE06B195E02BCF8D3A81B /* LTExtNSObject */;
+			targetProxy = C30C70BF665AC522BDCF834E4CC2C204 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		262D74305A81110549B73782417B24CA /* Release */ = {
+		21954099E21085797D6A3823A0DB8E20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A0653CE1672EB48002907ED361BAC1C /* LTExtNSObject.xcconfig */;
+			baseConfigurationReference = 9315015301FE12410B86C8F84097B7C4 /* Pods-LTExtNSObject_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LTExtNSObject/LTExtNSObject-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LTExtNSObject/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LTExtNSObject/LTExtNSObject.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LTExtNSObject;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4296536FC41859C86CC48A5C7301F593 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A46170357EB737EFD14086EC931E908 /* Pods-LTExtNSObject_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LTExtNSObject_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LTExtNSObject_Example/Pods-LTExtNSObject_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LTExtNSObject_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		44DFD5BB65F0F547C3A7CF24DEB3FECC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26676BA8467CB49CA00F8CAA288545E5 /* Pods-LTExtNSObject_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LTExtNSObject_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LTExtNSObject_Tests/Pods-LTExtNSObject_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LTExtNSObject_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7D120E21965482ECB9507A95B49BC970 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9F1DBF3A85F36F629AB1D28E22A4BD6 /* Pods-LTExtNSObject_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LTExtNSObject_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LTExtNSObject_Example/Pods-LTExtNSObject_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LTExtNSObject_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		922A37EE60675A75E98B251BA2243FE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10D051851CB0CB688071978101EFA690 /* Pods-LTExtNSObject_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LTExtNSObject_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LTExtNSObject_Tests/Pods-LTExtNSObject_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LTExtNSObject_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B569ECED6DF5EC7ABDDF8C8957E26574 /* Release */ = {
+		4EE6C0506316755875CD481FAC933799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E0090CACBC8C78641D87AF8442F4A266 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A0653CE1672EB48002907ED361BAC1C /* LTExtNSObject.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LTExtNSObject/LTExtNSObject-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LTExtNSObject/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LTExtNSObject/LTExtNSObject.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LTExtNSObject;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FD5B3B1E89981BCDBC5C396B164D3C37 /* Debug */ = {
+		80CD87F6CD790A781413136112217B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B9264CB41CA8A76309673591123B9B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179275BC1C5FF905AC3C059CBACD4B7A /* LTExtNSObject.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LTExtNSObject/LTExtNSObject-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LTExtNSObject;
+				PRODUCT_NAME = LTExtNSObject;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D26BD4D5C8DE966098F111C181A734F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179275BC1C5FF905AC3C059CBACD4B7A /* LTExtNSObject.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LTExtNSObject/LTExtNSObject-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LTExtNSObject;
+				PRODUCT_NAME = LTExtNSObject;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8F8811BC504A9AD5B2EDDD1AF1CEC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8119400EA393591F5249A552621DDD /* Pods-LTExtNSObject_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01FDB7BF5E1B7740D950E4D15B6247A4 /* Build configuration list for PBXNativeTarget "LTExtNSObject" */ = {
+		0F144D802CC84951CB926BF47AF4A07D /* Build configuration list for PBXNativeTarget "Pods-LTExtNSObject_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0090CACBC8C78641D87AF8442F4A266 /* Debug */,
-				262D74305A81110549B73782417B24CA /* Release */,
+				D8F8811BC504A9AD5B2EDDD1AF1CEC99 /* Debug */,
+				21954099E21085797D6A3823A0DB8E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -801,26 +612,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD5B3B1E89981BCDBC5C396B164D3C37 /* Debug */,
-				B569ECED6DF5EC7ABDDF8C8957E26574 /* Release */,
+				80CD87F6CD790A781413136112217B22 /* Debug */,
+				4EE6C0506316755875CD481FAC933799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A3BF0D7DAC07876001AEF148352DA5D /* Build configuration list for PBXNativeTarget "Pods-LTExtNSObject_Example" */ = {
+		8DA8EA6571674308A05DBF5167BEC09C /* Build configuration list for PBXNativeTarget "LTExtNSObject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4296536FC41859C86CC48A5C7301F593 /* Debug */,
-				7D120E21965482ECB9507A95B49BC970 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7BC3A92F0677A46F683A5BFC3F39F076 /* Build configuration list for PBXNativeTarget "Pods-LTExtNSObject_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44DFD5BB65F0F547C3A7CF24DEB3FECC /* Debug */,
-				922A37EE60675A75E98B251BA2243FE1 /* Release */,
+				B9264CB41CA8A76309673591123B9B28 /* Debug */,
+				D26BD4D5C8DE966098F111C181A734F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

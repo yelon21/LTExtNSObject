@@ -25,9 +25,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"propertyDictionary=%@",[self propertyDictionary]);
     
-    NSArray *list = @[];
-    
-    BOOL empty =  LT_isEmptyArray(list);
+//    NSArray *list = @[];
+//    
+//    BOOL empty =  LT_isEmptyArray(list);
     
     
 }

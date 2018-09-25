@@ -13,7 +13,7 @@
 extern "C" {
 #endif
     
-    void LTOpenAppSettings();
+    void LTOpenAppSettings(void);
     void LTOpenSettingsURLString(NSString *urlString);
     
 #ifdef __cplusplus

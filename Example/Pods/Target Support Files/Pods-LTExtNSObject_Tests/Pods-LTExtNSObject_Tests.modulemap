@@ -1,6 +1,0 @@
-framework module Pods_LTExtNSObject_Tests {
-  umbrella header "Pods-LTExtNSObject_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
