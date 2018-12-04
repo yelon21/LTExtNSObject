@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4918121F627C7D7C699B7647685854E"
-               BlueprintName = "Pods-LTExtNSObject_Example"
+               BlueprintIdentifier = "D7F8FCEA1F08999DB3B19C1C7B718C65"
+               BlueprintName = "GTMBase64"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-LTExtNSObject_Example.a">
+               BuildableName = "libGTMBase64.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
