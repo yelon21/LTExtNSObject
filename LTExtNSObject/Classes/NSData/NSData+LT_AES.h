@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+//仅限 ecb PKCS7Padding
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (LT_AES)
