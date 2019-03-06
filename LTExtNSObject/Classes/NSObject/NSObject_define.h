@@ -36,16 +36,12 @@
 #define LT_SUPPORT_ARM64 (__LP64__ || (TARGET_OS_EMBEDDED && !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64)
 
 
+#ifndef LTLog
 #ifdef DEBUG
-#define LTLog(fmt, ...) NSLog(fmt, ...)
+#define LTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
-#define LTLog(fmt, ...) nil
+#define LTLog(...)
 #endif
-
-#ifdef DEBUG
-#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#define NSLog(fmt, ...) nil
 #endif
 
 #define ClassAndMethod [NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__]
