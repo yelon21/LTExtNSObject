@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 //仅限 ecb PKCS7Padding
-NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (LT_AES)
 
@@ -15,5 +14,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSData *)lt_aes256DecryptWithKey:(NSString *)key;
 @end
-
-NS_ASSUME_NONNULL_END

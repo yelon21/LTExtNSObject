@@ -60,7 +60,7 @@
 		608F5F0BEB4529EEE5C6A32B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6BA7105493DC64042C7A9D49 /* Pods-LTExtNSObject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTExtNSObject_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTExtNSObject_Example/Pods-LTExtNSObject_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6D6ACB657C8C94B859851984 /* libPods-LTExtNSObject_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTExtNSObject_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FDF3B0AB22B3476AD96E39E /* LTExtNSObject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LTExtNSObject.podspec; path = ../LTExtNSObject.podspec; sourceTree = "<group>"; };
+		6FDF3B0AB22B3476AD96E39E /* LTExtNSObject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LTExtNSObject.podspec; path = ../LTExtNSObject.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +250,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
