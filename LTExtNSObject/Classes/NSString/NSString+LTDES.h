@@ -14,4 +14,8 @@
 //解密
 - (NSString *)lt_decryptDESWithKey:(NSString*)deskey;
 
+- (NSString *)lt_encrypt3DESWithKey:(NSString *)deskey;
+
+//解密
+- (NSString *)lt_decrypt3DESWithKey:(NSString*)deskey;
 @end

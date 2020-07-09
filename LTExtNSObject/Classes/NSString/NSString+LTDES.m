@@ -22,30 +22,36 @@
     NSString *ciphertext = nil;
     NSString *plainText = self;
     
-    NSData *textData = [plainText dataUsingEncoding:NSUTF8StringEncoding];
-    NSUInteger dataLength = [textData length];
-    NSUInteger bufferPtrSize = ([textData length] + kCCBlockSizeDES) & ~(kCCBlockSizeDES - 1);
-    unsigned char buffer[bufferPtrSize];
-    memset(buffer, 0, sizeof(char));
-    size_t numBytesEncrypted = 0;
-    
-    Byte iv[] = {1,2,3,4,5,6,7,8};
-    
-    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
-                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
-                                          [deskey UTF8String], kCCKeySizeDES,
-                                          iv,
-                                          [textData bytes], dataLength,
-                                          buffer, bufferPtrSize,
-                                          &numBytesEncrypted);
-    if (cryptStatus == kCCSuccess) {
+    @try {
+        NSData *textData = [plainText dataUsingEncoding:NSUTF8StringEncoding];
+        NSUInteger dataLength = [textData length];
+        NSUInteger bufferPtrSize = ([textData length] + kCCBlockSizeDES) & ~(kCCBlockSizeDES - 1);
+        uint8_t *bufferPtr = NULL;
+        bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+        memset((void *)bufferPtr, 0x0, bufferPtrSize);
         
-        NSData *data = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesEncrypted];
+        size_t numBytesEncrypted = 0;
         
-        ciphertext = [[NSString alloc] initWithData:[GTMBase64 encodeData:data]
-                                           encoding:NSUTF8StringEncoding];
+        Byte iv[] = {1,2,3,4,5,6,7,8};
+        
+        CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
+                                              kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                              [deskey UTF8String], kCCKeySizeDES,
+                                              iv,
+                                              [textData bytes], dataLength,
+                                              (void *)bufferPtr, bufferPtrSize,
+                                              &numBytesEncrypted);
+        if (cryptStatus == kCCSuccess) {
+            
+            NSData *data = [NSData dataWithBytes:bufferPtr length:(NSUInteger)numBytesEncrypted];
+            
+            ciphertext = [[NSString alloc] initWithData:[GTMBase64 encodeData:data]
+                                               encoding:NSUTF8StringEncoding];
+        }
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception);
     }
-    
+
     return ciphertext;
 }
 
@@ -57,8 +63,11 @@
     NSData* cipherData = [GTMBase64 decodeString:cipherText];
     
     NSUInteger bufferPtrSize = ([cipherData length] + kCCBlockSizeDES) & ~(kCCBlockSizeDES - 1);
-    unsigned char buffer[bufferPtrSize];
-    memset(buffer, 0, sizeof(char));
+    
+    uint8_t *bufferPtr = NULL;
+    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+    memset((void *)bufferPtr, 0x0, bufferPtrSize);
+    
     size_t numBytesDecrypted = 0;
     Byte iv[] = {1,2,3,4,5,6,7,8};
     CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
@@ -69,12 +78,89 @@
                                           iv,
                                           [cipherData bytes],
                                           [cipherData length],
-                                          buffer,
+                                          (void *)bufferPtr,
                                           bufferPtrSize,
                                           &numBytesDecrypted);
     NSString* plainText = nil;
     if (cryptStatus == kCCSuccess) {
-        NSData* data = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesDecrypted];
+        NSData* data = [NSData dataWithBytes:bufferPtr length:(NSUInteger)numBytesDecrypted];
+        plainText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    }
+    return plainText;
+}
+
+/*字符串加密
+ *参数
+ *plainText : 加密明文
+ *key        : 密钥 64位
+ */
+- (NSString *)lt_encrypt3DESWithKey:(NSString *)deskey{
+    
+    NSString *ciphertext = nil;
+    NSString *plainText = self;
+    
+    @try {
+        NSData *textData = [plainText dataUsingEncoding:NSUTF8StringEncoding];
+        NSUInteger dataLength = [textData length];
+        NSUInteger bufferPtrSize = ([textData length] + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
+        uint8_t *bufferPtr = NULL;
+        bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+        memset((void *)bufferPtr, 0x0, bufferPtrSize);
+        
+        size_t numBytesEncrypted = 0;
+        
+        Byte iv[] = {1,2,3,4,5,6,7,8};
+        
+        CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithm3DES,
+                                              kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                              [deskey UTF8String], kCCKeySize3DES,
+                                              iv,
+                                              [textData bytes], dataLength,
+                                              (void *)bufferPtr, bufferPtrSize,
+                                              &numBytesEncrypted);
+        if (cryptStatus == kCCSuccess) {
+            
+            NSData *data = [NSData dataWithBytes:bufferPtr length:(NSUInteger)numBytesEncrypted];
+            
+            ciphertext = [[NSString alloc] initWithData:[GTMBase64 encodeData:data]
+                                               encoding:NSUTF8StringEncoding];
+        }
+    } @catch (NSException *exception) {
+        NSLog(@"exception:%@",exception);
+    }
+
+    return ciphertext;
+}
+
+//解密
+- (NSString *)lt_decrypt3DESWithKey:(NSString*)deskey{
+    
+    NSString *cipherText = self;
+    
+    NSData* cipherData = [GTMBase64 decodeString:cipherText];
+    
+    NSUInteger bufferPtrSize = ([cipherData length] + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
+    
+    uint8_t *bufferPtr = NULL;
+    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+    memset((void *)bufferPtr, 0x0, bufferPtrSize);
+    
+    size_t numBytesDecrypted = 0;
+    Byte iv[] = {1,2,3,4,5,6,7,8};
+    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
+                                          kCCAlgorithm3DES,
+                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                          [deskey UTF8String],
+                                          kCCKeySize3DES,
+                                          iv,
+                                          [cipherData bytes],
+                                          [cipherData length],
+                                          (void *)bufferPtr,
+                                          bufferPtrSize,
+                                          &numBytesDecrypted);
+    NSString* plainText = nil;
+    if (cryptStatus == kCCSuccess) {
+        NSData* data = [NSData dataWithBytes:bufferPtr length:(NSUInteger)numBytesDecrypted];
         plainText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
     return plainText;

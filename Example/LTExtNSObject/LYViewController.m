@@ -11,6 +11,7 @@
 #import "NSArray+LTCommon.h"
 #import "LTOpenSettings.h"
 #import <NSData+LT_AES.h>
+#import <NSString+LTDES.h>
 
 @interface LYViewController ()
 
@@ -35,25 +36,39 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
  
-//    LTOpenAppSettings();
-    
-    NSString *source = @"12345678901234567";
-    
-    NSString *key = @"11111111222222223333333344444444";
-    
-    NSData *sourceData = [source dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSData *encData = [sourceData lt_aes256EncryptWithKey:key];
-    
-//    NSString *enc64String = [encData base64EncodedStringWithOptions:0];
+////    LTOpenAppSettings();
 //
-//    NSData *dec64Data = [[NSData alloc]initWithBase64EncodedString:enc64String
-//                                                           options:NSDataBase64DecodingIgnoreUnknownCharacters];
+//    NSString *source = @"12345678901234567";
+//
+//    NSString *key = @"11111111222222223333333344444444";
+//
+//    NSData *sourceData = [source dataUsingEncoding:NSUTF8StringEncoding];
+//
+//    NSData *encData = [sourceData lt_aes256EncryptWithKey:key];
+//
+////    NSString *enc64String = [encData base64EncodedStringWithOptions:0];
+////
+////    NSData *dec64Data = [[NSData alloc]initWithBase64EncodedString:enc64String
+////                                                           options:NSDataBase64DecodingIgnoreUnknownCharacters];
+//
+//    NSData *decData = [encData lt_aes256DecryptWithKey:key];
+//    NSString *result = [[NSString alloc]initWithData:decData encoding:NSUTF8StringEncoding];
+//
+//    NSLog(@"result=%@",result);
     
-    NSData *decData = [encData lt_aes256DecryptWithKey:key];
-    NSString *result = [[NSString alloc]initWithData:decData encoding:NSUTF8StringEncoding];
+    [self desTest];
+}
+
+- (void)desTest{
     
-    NSLog(@"result=%@",result);
+    NSString *source = @"12345678901234567假假按揭";
+    
+    NSString *key = @"123456781234567812345678";
+    NSString *encSource = [source lt_encrypt3DESWithKey:key];
+    
+    NSLog(@"encSource=%@", encSource);
+    
+    NSLog(@"decode=%@", [encSource lt_decrypt3DESWithKey:key]);
     
 }
 
