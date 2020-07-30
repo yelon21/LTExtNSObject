@@ -39,4 +39,37 @@
     return YES;
 }
 
++ (void)clearContentInMemory:(NSObject *)obj{
+    
+    if ([obj isKindOfClass:[NSData class]]) {
+        
+        unsigned long long address = (unsigned long long)[(NSData *)obj bytes];
+        long size = [(NSData *)obj length];
+        obj = nil;
+        memset((void *)address,0, size);
+    }
+    else if ([obj isKindOfClass:[NSString class]]){
+        
+        CFStringRef stringRef = (__bridge CFStringRef)(NSString *)obj;
+        int size = (int)[(NSString *)obj lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+        
+        const void * address  = CFStringGetCStringPtr(stringRef, kCFStringEncodingUTF8);
+        if (address == NULL) {
+            
+            return;
+        }
+        if ((unsigned long long)address > 0xffffffffff) {
+            
+            return;
+        }
+        obj = nil;
+        
+        memset((void *)address,0, size);
+    }
+    else{
+        
+        NSLog(@"object class:%@", NSStringFromClass([obj class]));
+    }
+}
+
 @end

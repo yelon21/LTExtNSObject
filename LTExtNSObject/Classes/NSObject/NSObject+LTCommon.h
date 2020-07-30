@@ -12,4 +12,6 @@
 
 -(NSDictionary *)propertyDictionary;
 + (BOOL)LT_isValidObj:(NSObject *)obj;
+
++ (void)clearContentInMemory:(NSObject *)obj;
 @end

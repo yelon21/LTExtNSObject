@@ -55,15 +55,15 @@
     
     return [self evaluate:rex];
 }
-//密码:（6-16）位字符
+//密码:（8-16）位字符
 - (BOOL)lt_vaidPassword{
 
     return [self lt_isVaidPassword];
 }
-//密码:（6-16）位字符
+//密码:（8-16）位字符
 - (BOOL)lt_isVaidPassword{
     
-    return [self lt_isVaidPassword:6 toLength:16];
+    return [self lt_isVaidPassword:8 toLength:16];
 }
 //密码:字符 length-toLength
 - (BOOL)lt_isVaidPassword:(NSUInteger)length
