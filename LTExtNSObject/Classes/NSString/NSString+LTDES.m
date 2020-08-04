@@ -49,6 +49,7 @@
                                                encoding:NSUTF8StringEncoding];
         }
         free(bufferPtr);
+        bufferPtr = NULL;
     } @catch (NSException *exception) {
         NSLog(@"exception:%@",exception);
     }
@@ -88,6 +89,7 @@
         plainText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
     free(bufferPtr);
+    bufferPtr = NULL;
     return plainText;
 }
 
@@ -128,6 +130,7 @@
                                                encoding:NSUTF8StringEncoding];
         }
         free(bufferPtr);
+        bufferPtr = NULL;
     } @catch (NSException *exception) {
         NSLog(@"exception:%@",exception);
     }
@@ -167,6 +170,7 @@
         plainText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
     free(bufferPtr);
+    bufferPtr = NULL;
     return plainText;
 }
 @end
