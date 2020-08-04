@@ -41,22 +41,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "29ABBB00-4D54-4682-939A-6FDA6B025D4F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../LTExtNSObject/Classes/NSString/NSString+LTDES.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-lt_encryptDESWithKey:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "847B0925-5522-4C76-9137-38AD9A122273"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -64,25 +48,9 @@
             filePath = "LTExtNSObject/LYViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-desTest"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B71E028E-E3F1-4D33-9F99-096E40E1DCD6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LTExtNSObject/LYAppDelegate.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-applicationWillResignActive:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -108,8 +76,8 @@
             filePath = "LTExtNSObject/LYAppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48">
+            startingLineNumber = "47"
+            endingLineNumber = "47">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,8 +90,8 @@
             filePath = "LTExtNSObject/LYAppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65">
+            startingLineNumber = "47"
+            endingLineNumber = "47">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -139,6 +107,38 @@
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "-applicationWillTerminate:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E805472-7F69-4879-A22D-5F3DD4E5DAD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTExtNSObject/Classes/Other/LTAccess/LTAccess.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "+LT_AccessToVideoCheck:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0ECAB3D-C5B3-4944-AAF6-5355F6CA1A56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LTExtNSObject/Classes/Other/LTAccess/LTAccess.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "+LT_AccessToVideoCheck:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

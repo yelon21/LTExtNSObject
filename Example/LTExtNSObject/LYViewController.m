@@ -12,6 +12,7 @@
 #import "LTOpenSettings.h"
 #import <NSData+LT_AES.h>
 #import <NSString+LTDES.h>
+#import <LTAccess.h>
 
 @interface LYViewController ()
 
@@ -56,7 +57,12 @@
 //
 //    NSLog(@"result=%@",result);
     
-    [self desTest];
+    [self accessTest];
+}
+
+- (void)accessTest{
+    
+
 }
 
 - (void)desTest{

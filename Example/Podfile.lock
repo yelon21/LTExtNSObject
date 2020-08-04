@@ -7,7 +7,7 @@ DEPENDENCIES:
   - LTExtNSObject (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - GTMBase64
 
 EXTERNAL SOURCES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
-  LTExtNSObject: 579ad285e9c2bec70ece5efa2bc64f97c781568d
+  LTExtNSObject: c24933cf677631ad9b0393430281e6a0f840ddfd
 
 PODFILE CHECKSUM: 67904de03eddc564706f6bcf169e356a3fc9e68c
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.9.3

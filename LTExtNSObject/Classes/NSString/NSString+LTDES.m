@@ -48,6 +48,7 @@
             ciphertext = [[NSString alloc] initWithData:[GTMBase64 encodeData:data]
                                                encoding:NSUTF8StringEncoding];
         }
+        free(bufferPtr);
     } @catch (NSException *exception) {
         NSLog(@"exception:%@",exception);
     }
@@ -86,6 +87,7 @@
         NSData* data = [NSData dataWithBytes:bufferPtr length:(NSUInteger)numBytesDecrypted];
         plainText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
+    free(bufferPtr);
     return plainText;
 }
 
@@ -125,6 +127,7 @@
             ciphertext = [[NSString alloc] initWithData:[GTMBase64 encodeData:data]
                                                encoding:NSUTF8StringEncoding];
         }
+        free(bufferPtr);
     } @catch (NSException *exception) {
         NSLog(@"exception:%@",exception);
     }
@@ -163,6 +166,7 @@
         NSData* data = [NSData dataWithBytes:bufferPtr length:(NSUInteger)numBytesDecrypted];
         plainText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
+    free(bufferPtr);
     return plainText;
 }
 @end
