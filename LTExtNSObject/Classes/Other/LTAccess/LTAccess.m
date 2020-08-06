@@ -157,18 +157,13 @@
     
     UIUserNotificationSettings *settings = [[UIApplication sharedApplication] currentUserNotificationSettings];
     UIUserNotificationType authStatus = settings.types;
-    LTAccessStatus status = LTAccessStatusNotDetermined;
-    switch (authStatus) {
-            case UIUserNotificationTypeNone:
-                status = LTAccessStatusDenied;
-                break;
-            case UIUserNotificationTypeAlert:
-            case UIUserNotificationTypeBadge:
-            case UIUserNotificationTypeSound:
-                status = LTAccessStatusAuthorized;
-                break;
+    
+    if (authStatus == UIUserNotificationTypeNone) {
+        
+        return LTAccessStatusDenied;
     }
-    return status;
+    
+    return LTAccessStatusAuthorized;
 }
 
 @end
