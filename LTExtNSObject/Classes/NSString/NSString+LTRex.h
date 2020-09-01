@@ -66,4 +66,6 @@
 //ip
 - (BOOL)lt_isIpString;
 
+- (BOOL)evaluate:(NSString *)rex;
+
 @end
