@@ -103,8 +103,24 @@
     BOOL vaild = [self evaluate:rex];
     return vaild;
 }
-//非虚拟手机号校验
+
+//手机号校验
 - (BOOL)lt_isPhoneNumberString{
+    
+    NSString *phoneNumber = @"^1([35-9]\\d|47)\\d{8}$";
+    
+    if ([self evaluate:phoneNumber]){
+        
+        return YES;
+    }
+    else {
+        
+        return NO;
+    }
+}
+
+//非虚拟手机号校验
+- (BOOL)lt_isPhoneValidNumberString{
     
     /*
      移动号段：
@@ -115,7 +131,7 @@
      133、1349（卫星通信）、149、153、17[37]、18[019]、199//1700（虚拟运营商电信号段）
      */
     
-    NSString * MOBILE = @"^1(3[0-9]|4[5679]|5[0-9]|6[56]]|7[12356789]|8[0-9]|9[0-9])\\d{8}$";
+    NSString * MOBILE = @"^1(3[0-9]|4[5679]|5[0-9]|6[567]]|7[12356789]|8[0-9]|9[0-9])\\d{8}$";
     
     //中国移动：China Mobile
     NSString * CM = @"^1(34[0-8]|(3[5-9]|47|5[0127-9]|65|8[2-478]|7[28]|9[578])\\d)\\d{7}$";

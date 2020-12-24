@@ -34,8 +34,10 @@
 //银行卡有效期
 - (BOOL)lt_isCardDate;
 
-//非虚拟手机号校验
+//手机号校验
 - (BOOL)lt_isPhoneNumberString;
+//非虚拟手机号校验
+- (BOOL)lt_isPhoneValidNumberString;
 //虚拟号段校验
 - (BOOL)lt_isPhoneVirtualNumberString;
 //手机号段校验
