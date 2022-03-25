@@ -174,7 +174,7 @@
 //手机号段校验
 - (BOOL)lt_isPhoneNumberStringContainVirtualNumber{
 
-    BOOL result  = [self lt_isNumberString]||[self lt_isPhoneVirtualNumberString];
+    BOOL result  = [self lt_isPhoneValidNumberString]||[self lt_isPhoneVirtualNumberString];
     return result;
 }
 //mail地址格式检查
