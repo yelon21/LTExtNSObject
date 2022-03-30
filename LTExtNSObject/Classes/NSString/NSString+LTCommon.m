@@ -111,4 +111,59 @@ BOOL LT_IsEmptyString(NSObject *obj){
     return YES;
 }
 
+- (NSString *)lt_maskString{
+    
+    NSInteger length = self.length-4;
+    
+    if (length>0) {
+        
+        return [self lt_maskString:NSMakeRange(2, length)];
+    }
+    return self;
+}
+
+- (NSString *)lt_maskNameString{
+    
+    NSInteger length = self.length-1;
+    
+    if (length>0) {
+        
+        return [self lt_maskString:NSMakeRange(1, length)];
+    }
+    return self;
+}
+
+- (NSString *)lt_maskPhoneNumberString{
+
+    return [self lt_maskString:NSMakeRange(3, 4)];
+}
+
+- (NSString *)lt_maskString:(NSRange)range{
+    
+    if (LT_IsEmptyString(self)) {
+        
+        return @"";
+    }
+    
+    NSUInteger contentLength = self.length;
+    
+    NSUInteger rangeLocation = range.location;
+    NSUInteger rangeLength = range.length;
+    
+    if (rangeLength==0 || contentLength < rangeLocation+rangeLength) {
+        
+        return self;
+    }
+    
+    NSMutableArray *mask = [[NSMutableArray alloc] init];
+    
+    do {
+        [mask addObject:@"*"];
+    } while (mask.count < rangeLength);
+    
+    NSString *des = [self stringByReplacingCharactersInRange:range
+                                                  withString:[mask componentsJoinedByString:@""]];
+    return des;
+}
+
 @end

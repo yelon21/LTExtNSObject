@@ -13,6 +13,12 @@
 + (NSString *)LT_StringJoindByComponents:(NSString *)components, ... NS_REQUIRES_NIL_TERMINATION;
 
 - (BOOL)lt_containsString:(NSString *)str;
+
+- (NSString *)lt_maskString;
+
+- (NSString *)lt_maskNameString;
+
+- (NSString *)lt_maskPhoneNumberString;
 @end
 
 #ifdef __cplusplus
